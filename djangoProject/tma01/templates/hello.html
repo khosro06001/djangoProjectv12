@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Oh God Oh God Children in G a z a Poor Children in G a z a</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This line just to get rid of the irrelevant & irritating favicon.ico NOT FOUND error in the firefox KONSOLE -->
+    <link rel="favicon.ico" href="#">
+    <link rel="shortcut icon" href="#">
+    <!-- Bootstrap CSS --------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    	  rel="stylesheet"
+    	  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    	  crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="{% static 'jquery-3.7.1.min.js' %}"></script>         -->
+    
+  </head>
+  <body>
+    
+
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->
+    <!-- FROM ASSIGNMENT 4 ----------------------------------------------------------------------------------->    
+    <div class="min-vw-25"><!-- START MINIMUM WIDTH -------------------------->
+      <div class="container-fluid bg-primary text-white pt-5 pb-2">
+	<div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h1 class="display-3 text-center m-3 fw-bolder">Ticketmaster</h1>
+            <h2 class="display-6 text-center fw-bold">Quickly find tickets around you</h2>
+	    <div class="row justify-content-center">
+	      <div class="col-8">
+		<div class="input-group mt-4 mb-2">
+		  <input type="text" id="the-genre" class="form-control" placeholder="Genre, artist or event: e.g. Jazz" name="search_term">
+		  <input type="text" id="the-city" class="form-control" placeholder="Enter a city, e.g. Los Angeles" name="location">
+		  <button id="the-search-button" class="btn btn-danger" type="button">SEARCH</button>
+		</div>
+	      </div>    
+	    </div>
+	    <div id="for-genre-error"></div> <!-- empty div for genre error -->
+	    <div id="for-city-error"></div> <!-- empty div for city error -->
+	  </div>
+	</div>
+      </div>
+      <!-- </div> -->
+    <div class="row justify-content-center">
+      <!-- <div id="no-results-found" class="col-2 rounded bg-light text-dark text-center fw-bold fs-6 py-2 my-3 d-none"> get rid of d-none-->
+	<div id="no-results-found" class="col-2 rounded bg-light text-dark text-center fw-bold fs-6 py-2 my-3">
+	  <div class="shadow">
+	    <span id="number-of-results"> Results</span> <!-- for now inactivated  -->
+	  </div>
+	</div>
+      </div>
+      <div class="container my-5">
+	<div class="row justify-content-center">
+	  <div class="col-lg-9">
+	    <p></p>
+	    <div class="shadow"> <!-- SHADOW BOX CONTAINING ALL CARDS  -->
+	      <div class="row my-1 mx-2">
+		<div class="col mx-2 my-5">
+		  <button type="button" class="btn btn-light fs-4 text-secondary fw-bold">
+		    <span id="numberOfEvents"></span> <!-- empty span container for ajax  -->
+		  </button>
+		  <div id="results"></div> <!-- This div is a placeholder for the information coming from the API -->
+		  <div class="row justify-content-center bg-light ">	
+		    <div class="col">
+		      <div id="bean-container"></div> <!-- APPEND HERE bean eventttttttttttttttttttttttttttttttttttttt--> 
+		      <div id="events-container"></div> <!-- APPEND HERE -->
+		      <div id="multiple-user-container"></div> <!-- APPEND HERE -->
+		    </div>
+		  </div>
+		</div>
+	      </div> <!-- end shadow  -->
+	    </div>
+	    
+	  </div>
+	</div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+      <script src="js/ticketmaster.js"></script>
+    </div> <!-- end minimum-width -->
+
+
+
+
+    
+    <!-- 20 RESULTS FOUND  20 RESULTS FOUND  20 RESULTS FOUND  20 RESULTS FOUND  20 RESULTS FOUND -->
+    <script>
+      ec = document.getElementById("number-of-results");
+      ec.innerHTML = '{{events|length}}'+' Results'; // YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS! 
+    </script>
+
+
+    
+    
+
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    
+    
+    {% for event in events %}
+
+
+	    	    				<section class="shadow"> 
+	    	    				<div class="card mb-3">
+	    	    				<div class="row g-0 align-items-center">
+	    	    				<div class="col-sm-4">
+	    	    				<img class="card-img rounded px-1 py-4" src=">{{ event.images.0.url }}"  alt="bean-image">
+	    	    				</div>
+
+
+
+						
+						  
+    <div>{{ event.name }}</div>
+    <div>{{ event.dates.start.localDate }}</div>
+    <div>{{ event.dates.start.localTime }}</div>
+    <div>{{ event.dates.start.localTime }}</div>
+    <div>{{ event.dates.start.dateTime }}</div>
+    <div>{{ event.url }}</div>
+    <div>{{ event.images.0.url }}</div>
+    <div>   venueName    </div>
+    <div>   cityName     </div>
+    <div>   stateName    </div>
+    <div>   addressLine1 </div>
+
+
+
+
+
+	    	    				</div> 
+	    	    				</div> 
+	    	    				</section>
+
+
+
+
+
+
+
+
+
+
+
+    
+    {% endfor %}      
+
+
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    <!-- KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT   KEEP IMPORTANT  -->
+    
+    
+
+    
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- {% for event in events %} -->
+    <!-- <div>{{ event.name }}</div> -->
+    <!-- <div>{{ event.dates.start.localDate }}</div> -->
+    <!-- <div>{{ event.dates.start.localTime }}</div> -->
+    <!-- <div>{{ event.dates.start.localTime }}</div> -->
+    <!-- <div>{{ event.dates.start.dateTime }}</div> -->
+    <!-- <div>{{ event.url }}</div> -->
+    <!-- <div>{{ event.images.0.url }}</div> -->
+    <!-- <div>   venueName    </div> -->
+    <!-- <div>   cityName     </div> -->
+    <!-- <div>   stateName    </div> -->
+    <!-- <div>   addressLine1 </div> -->
+    <!-- {% endfor %}       -->
+
+
+    
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY     BACKUP COPY  -->
+    <!-- {% for event in events %} -->
+    <!-- <div>{{ event.name }}</div> -->
+    <!-- <div>{{ event.dates.start.localDate }}</div> -->
+    <!-- <div>{{ event.dates.start.localTime }}</div> -->
+    <!-- <div>{{ event.dates.start.localTime }}</div> -->
+    <!-- <div>{{ event.dates.start.dateTime }}</div> -->
+    <!-- <div>{{ event.url }}</div> -->
+    <!-- <div>{{ event.images.0.url }}</div> -->
+    <!-- <div>   venueName    </div> -->
+    <!-- <div>   cityName     </div> -->
+    <!-- <div>   stateName    </div> -->
+    <!-- <div>   addressLine1 </div> -->
+    <!-- {% endfor %}       -->
+
+
+
+    
+
+
+    
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+    <!-- THIS PART MAINTAINED FOR SENTIMENTAL VALUE  ---------------------------------------->
+
+
+
+    
+    <!-- Hello from the lecture slides  -->
+    <!-- <h1>Hello {{ name }}</h1> -->
+
+    <!-- for now let us hide this element -->
+    <!-- <p hidden id="demo"></p> -->
+    <p hidden id="demo">default-value-in-demo</p>
+    
+    <!-- <pre id="rjo"> {{ response_json_object }}</pre> -->
+    <pre hidden id="rjo"> {{ response_json_object }}</pre>
+
+    
+    <!-- KEEP THIS LINE: IT WORKS! -->
+    <!-- <pre> {{ pre_un_reformatted_text }}</pre> -->
+    <pre hidden > {{ pre_un_reformatted_text }}</pre>
+
+    <!-- KEEP THIS LINE: IT WORKS! This variable was handed over to the html template by hello() in views.py-->
+    <!-- <pre> {{ events }}</pre> -->
+    <pre hidden > {{ events }}</pre>
+
+    <!-- this prints the event-with-index-zero -->
+    <pre hidden > {{ events.0 }}</pre>
+
+    <!-- this prints the just the name of the first element -->
+    <pre hidden > {{ events.0.name }}</pre>
+
+
+    
+    <h1 id="events-length">default-value-for-length-of-events-arrays</h1> <!-- APPEND HERE -->
+
+    <script>
+      ec = document.getElementById("events-length");
+      ec.innerHTML = '{{events|length}}'; // YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS! 
+    </script>
+
+    <!-- <div id="events-container3"></div> <\!-- APPEND HERE -\-> -->
+      <!-- <p id="events-container3">default-value-in-event-container</p> <\!-- APPEND HERE -\-> -->
+	<div id="events-container3">default-value-in-events-container</div> <!-- APPEND HERE -->
+
+
+	<div id="events-container2">default-value-in-events-container</div> <!-- APPEND HERE -->
+
+
+	
+	<!-- KEEP THIS LINE FOR LATER -->
+	<!-- <script src="{% static 'myscript.js' %}"></script> -->
+	<script>
+	  t = document.getElementById("demo").innerHTML;
+	  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+	  document.getElementById("demo").innerHTML = "Hello JavaScript!"+t;
+	  console.log('Just under getElementById ... ');
+	</script> 
+	
+	<script>
+	  // This will replace the textContext of the the rjo element
+	  const element = document.getElementById('rjo');
+	  const textContent = element.textContent;
+	  console.log('Here under textContent...');
+	  console.log(textContent);
+	</script>
+	
+	<!-- NOW WE HAVE A JSON OBJECTS called "events" and IT is an array with 20 nested elemented -->
+	<script>
+	  t = document.getElementById("events-container2").innerHTML;
+	  document.getElementById("events-container2").innerHTML = "document.getElementById(events-container2) changed this...";
+	  ec = document.getElementById("events-container2");
+	  ec.innerHTML = "ec.innerHTML changed this ...";
+	</script>
+	
+	<!-- NOW WE HAVE A JSON OBJECTS called "events" and IT is an array with 20 nested elemented -->
+	<!-- DOCUMENT READY FUNCTION WORKS!!!! ------------------------------------------------------->
+	<script>
+	  ec = document.getElementById("events-container3");
+	  ec.innerHTML = "ec.innterHTML;"
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = "ec.innerHTML changed this ..."+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = 'ec.innerHTML changed this ...'+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = 'ec.innerHTML changed this ...'+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = 'ec.innerHTML changed this ...'+'{{events.0.name}}'; // t is a function, not a value!
+	  ec.innerHTML = '{{events.0.name}}'; // zeroth event
+	  ec.innerHTML = '{{events.1.name}}'; // element with index 1
+	  ///ec.innerHTML = '{{events|length}}'; // YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!
+	</script>
+
+	<script>
+	  /// THIS WORKS!
+	  ec = document.getElementById("events-container3");
+	  ec.innerHTML += '<h1>{{events.0.name}}<h1>';
+	  ec.innerHTML += '<h1>{{events.1.name}}<h1>';
+	  ec.innerHTML += '<h1>{{events.2.name}}<h1>';
+	  ec.innerHTML += '<h1>{{events.3.name}}<h1>';
+	  ec.innerHTML += '<h1>{{events.4.name}}<h1>';
+	  ec.innerHTML += '<h1>{{events.5.name}}<h1>';
+						     </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
